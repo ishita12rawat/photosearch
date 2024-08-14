@@ -27,8 +27,8 @@ function ImageApp() {
     <>
       <div className='text-white bg-slate-700 w-full min-h-screen'>
         <div className='container'>
-          <h1 className="text-4xl  text-center"> Image Searher</h1>
-          <div className='flex flex-wrap justify-center items-center gap-4'>
+          <h1 className="text-4xl  text-center"> Image Searcher</h1>
+          <div className='flex flex-wrap justify-center items-center mt-4 gap-4'>
           <input
             className='bg-slate-200 px-5 items-center py-2 mx-8 rounded-md block text-blue-800 text-3xl text-center border-zinc-600'
             placeholder='Search'
@@ -37,7 +37,7 @@ function ImageApp() {
             onChange={handleSearch}
           />
           <button
-            className="block bg-blue-500 rounded-md text-white w-20"
+            className="block bg-blue-500 rounded-md text-white w-30 px-5 py-2 "
             onClick={setting}
           >
             Search
@@ -56,7 +56,7 @@ function ImageApp() {
                 />
               ))
             ) : (
-              <p className='text-4xl'>No images found</p>
+              <p className='text-4xl'>No images found...</p>
             )}
           </div>
         </div>
